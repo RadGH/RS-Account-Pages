@@ -1,3 +1,25 @@
+/* ACF custom classes rs 1.0.0 */
+.acf-field.acf-hide-label > .acf-label,
+.acf-field.acf-hide-label.acf-field-clone .acf-clone-fields > .acf-field > .acf-label,
+.acf-field.acf-hide-label.acf-field-group > .acf-input > .acf-fields > .acf-field > .acf-label {
+	display: none;
+}
+
+.acf-field.acf-no-padding > .acf-input > .acf-fields > .acf-field {
+	padding: 0;
+}
+
+.acf-field.acf-no-side-padding > .acf-input > .acf-fields > .acf-field {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.acf-field.acf-no-border,
+.acf-field.acf-no-border > .acf-input > .acf-fields {
+	border: none;
+}
+/* End: ACF custom classes */
+
 /*
 Account Page > Settings > Menu > Menu Items > Menu item:
 - Separate multiple "Menu Item" fields with a gap of 5px
