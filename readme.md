@@ -25,5 +25,8 @@ This plugin adds the Account Pages post type. You can also create menus in the s
 
 ## Changelog
 
+### 1.0.1
+* Added GitHub Updater support
+
 ### 1.0.0
 * Initial release
