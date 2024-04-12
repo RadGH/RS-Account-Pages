@@ -44,7 +44,7 @@ class RS_Account_Pages_Account {
 		),
 		'public' => true,
 		'exclude_from_search' => true,
-		'show_in_nav_menus' => false,
+		'show_in_nav_menus' => true,
 		'show_in_rest' => true,
 		'menu_icon' => 'dashicons-admin-users',
 		'supports' => array( 'title', 'editor', 'revisions' ),
