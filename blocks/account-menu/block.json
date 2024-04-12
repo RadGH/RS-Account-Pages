@@ -1,0 +1,39 @@
+{
+  "name": "rs-account-pages/account-menu",
+  "title": "Account Menu",
+  "description": "Displays a list of account pages from the account page settings.",
+  "style": [
+    "file:./account-menu.css"
+  ],
+  "category": "common",
+  "icon": "admin-users",
+  "keywords": [ "account",  "menu",  "user",  "profile" ],
+  "supports": {
+    "align": false,
+    "anchor": true,
+    "layout": false,
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": false
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "FontFamily": true,
+      "FontWeight": true,
+      "FontStyle": true,
+      "TextTransform": true,
+      "LetterSpacing": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalLetterSpacing": true
+    }
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "account-menu.php"
+  }
+}

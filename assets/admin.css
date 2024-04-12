@@ -1,0 +1,14 @@
+/*
+Account Page > Settings > Menu > Menu Items > Menu item:
+- Separate multiple "Menu Item" fields with a gap of 5px
+*/
+.acf-field.acf-field-65e8d46343a36 > .acf-input > .acf-fields {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+/* Protection column width on Account Pages list screen */
+.widefat .column-protect_page {
+	width: 10%;
+}

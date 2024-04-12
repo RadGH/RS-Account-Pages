@@ -1,0 +1,31 @@
+.wp-block-account-menu {
+	display: flex;
+	flex-direction: column;
+	gap: 5px 20px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.wp-block-account-menu li.account-menu--item {
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.wp-block-account-menu li.account-menu--item a {
+	display: block;
+	width: fit-content;
+	text-decoration: none;
+}
+
+.wp-block-account-menu li.account-menu--item a:where(:hover, :focus-visible) {
+	text-decoration: underline;
+}
+
+@media ( min-width: 600.1px ) {
+	.wp-block-account-menu {
+		flex-direction: row;
+	}
+}
