@@ -64,7 +64,23 @@ class RS_Account_Pages {
 		});
 	}
 	
+	/**
+	 * Add a link to the settings page
+	 *
+	 * @param array $links
+	 *
+	 * @return array
+	 */
+	public static function add_settings_link( $links ) {
+		$settings_link = '<a href="edit.php?post_type=account-page&page=account-page-settings">Settings</a>';
+		array_unshift( $links, $settings_link );
+		return $links;
+	}
+	
 }
+
+// Add a link to the settings page
+add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), array('RS_Account_Pages', 'add_settings_link') );
 
 // Initialize the plugin
 add_action( 'plugins_loaded', array('RS_Account_Pages', 'load_plugin') );

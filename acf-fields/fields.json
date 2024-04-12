@@ -35,7 +35,7 @@
                 {
                     "param": "block",
                     "operator": "==",
-                    "value": "dm-dungeon\/account-menu"
+                    "value": "rs-account-pages\/account-menu"
                 }
             ]
         ],

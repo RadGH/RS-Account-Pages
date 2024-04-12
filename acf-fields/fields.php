@@ -41,7 +41,7 @@ add_action( 'acf/include_fields', function() {
 				array(
 					'param' => 'block',
 					'operator' => '==',
-					'value' => 'dm-dungeon/account-menu',
+					'value' => 'rs-account-pages/account-menu',
 				),
 			),
 		),
