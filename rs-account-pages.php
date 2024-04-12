@@ -28,7 +28,7 @@ class RS_Account_Pages {
 		}
 		
 		if ( $missing_plugins ) {
-			self::add_admin_notice( '<strong>RS Utility Blocks:</strong> The following plugins are required: '. implode(', ', $missing_plugins) . '.', 'error' );
+			self::add_admin_notice( '<strong>RS Account Pages:</strong> The following plugins are required: '. implode(', ', $missing_plugins) . '.', 'error' );
 			return;
 		}
 		
