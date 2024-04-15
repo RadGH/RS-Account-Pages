@@ -5,7 +5,7 @@ Description: Adds an Account Pages post type with custom menus that have conditi
 Version: 1.0.3
 Author: Radley Sustaire
 Author URI: https://radleysustaire.com
-GitHub Plugin URI: https://github.com/RadGH/rs-account-pages
+GitHub Plugin URI: https://github.com/RadGH/RS-Account-Pages
 */
 
 define( 'RSAD_PATH', __DIR__ );
