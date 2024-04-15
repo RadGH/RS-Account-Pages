@@ -25,6 +25,14 @@ This plugin adds the Account Pages post type. You can also create menus in the s
 
 ## Changelog
 
+### 1.0.3
+* Added vertical layout to account menu block
+* Changed ACF fields to load on acf/init
+* Fixed error using as an array on account page archive redirect
+
+### 1.0.2
+* Automatically flush rewrite rules after activation
+
 ### 1.0.1
 * Added GitHub Updater support
 

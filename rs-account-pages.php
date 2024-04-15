@@ -2,7 +2,7 @@
 /*
 Plugin Name: RS Account Pages
 Description: Adds an Account Pages post type with custom menus that have conditional logic based on the current user.
-Version: 1.0.1
+Version: 1.0.3
 Author: Radley Sustaire
 Author URI: https://radleysustaire.com
 GitHub Plugin URI: https://github.com/RadGH/rs-account-pages
@@ -10,7 +10,7 @@ GitHub Plugin URI: https://github.com/RadGH/rs-account-pages
 
 define( 'RSAD_PATH', __DIR__ );
 define( 'RSAD_URL', plugin_dir_url(__FILE__) );
-define( 'RSAD_VERSION', '1.0.1' );
+define( 'RSAD_VERSION', '1.0.3' );
 
 class RS_Account_Pages {
 	
@@ -20,6 +20,7 @@ class RS_Account_Pages {
 	 * @return void
 	 */
 	public static function load_plugin() {
+		
 		// Check for required plugins
 		$missing_plugins = array();
 		
@@ -32,9 +33,6 @@ class RS_Account_Pages {
 			return;
 		}
 		
-		// Load ACF fields
-		require_once( RSAD_PATH . '/acf-fields/fields.php' );
-		
 		// Load plugin files
 		require_once( RSAD_PATH . '/includes/advanced/post-type-instance.php' );
 		require_once( RSAD_PATH . '/includes/advanced/menu-instance.php' );
@@ -43,6 +41,13 @@ class RS_Account_Pages {
 		require_once( RSAD_PATH . '/includes/setup.php' );
 		require_once( RSAD_PATH . '/includes/utility.php' );
 		
+	}
+	
+	/**
+	 * When the plugin is activated, set up the post types and refresh permalinks
+	 */
+	public static function on_plugin_activation() {
+		update_option( 'rs_account_pages_flush_rewrite_rules', 1, true );
 	}
 	
 	/**
@@ -81,6 +86,9 @@ class RS_Account_Pages {
 
 // Add a link to the settings page
 add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), array('RS_Account_Pages', 'add_settings_link') );
+
+// When the plugin is activated, set up the post types and refresh permalinks
+register_activation_hook( __FILE__, array('RS_Account_Pages', 'on_plugin_activation') );
 
 // Initialize the plugin
 add_action( 'plugins_loaded', array('RS_Account_Pages', 'load_plugin') );
