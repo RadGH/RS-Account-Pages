@@ -9,6 +9,9 @@ class RS_Account_Pages_Setup {
 	
 	public static function init() {
 		
+		// After the plugin has been activated, flush rewrite rules once
+		add_action( 'admin_init', array( __CLASS__, 'flush_rewrite_rules' ) );
+		
 		// Register (but do not enqueue) CSS and JS files
 		add_action( 'init', array( __CLASS__, 'register_all_assets' ) );
 		
@@ -27,6 +30,22 @@ class RS_Account_Pages_Setup {
 		// Register custom block types
 		add_action( 'init', array( __CLASS__, 'register_blocks' ) );
 		
+	}
+	
+	/**
+	 * Flush rewrite rules if the option is set
+	 *
+	 * @return void
+	 */
+	public static function flush_rewrite_rules() {
+		/**
+		 * This option is set to 1 when the plugin is activated.
+		 * @see RS_Account_Pages::on_plugin_activation()
+		 */
+		if ( get_option( 'rs_account_pages_flush_rewrite_rules' ) ) {
+			flush_rewrite_rules();
+			delete_option( 'rs_account_pages_flush_rewrite_rules' );
+		}
 	}
 	
 	/**
