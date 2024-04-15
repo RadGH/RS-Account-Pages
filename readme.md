@@ -25,6 +25,9 @@ This plugin adds the Account Pages post type. You can also create menus in the s
 
 ## Changelog
 
+### 1.0.2
+* Automatically flush rewrite rules after activation
+
 ### 1.0.1
 * Added GitHub Updater support
 
