@@ -24,6 +24,10 @@ if ( ! $m || $m == 'automatic' ) {
 	$menu = RS_Account_Pages_Menu::get_menu_by_slug( $m );
 }
 
+// Get the layout from the ACF field in the block settings.
+$layout = get_field( 'layout', $block['id'] );
+$atts['class'][] = 'layout--' . $layout;
+
 // If no menu is set, don't output anything, except on the block editor
 if ( empty($menu) && ! RS_Account_Pages_Utility::is_block_editor() ) {
 	return;
