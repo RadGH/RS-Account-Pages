@@ -121,7 +121,7 @@ class RS_Account_Pages_Account {
 		if ( ! $menu ) return;
 		
 		// Redirect to the first valid menu item
-		foreach( $menu['menu_items'] as $menu_item ) {
+		foreach( $menu->get_menu_items() as $menu_item ) {
 			wp_redirect( $menu_item['url'] );
 			exit;
 		}
