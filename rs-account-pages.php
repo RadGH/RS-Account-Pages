@@ -2,7 +2,7 @@
 /*
 Plugin Name: RS Account Pages
 Description: Adds an Account Pages post type with custom menus that have conditional logic based on the current user.
-Version: 1.0.2
+Version: 1.0.3
 Author: Radley Sustaire
 Author URI: https://radleysustaire.com
 GitHub Plugin URI: https://github.com/RadGH/RS-Account-Pages
@@ -10,7 +10,7 @@ GitHub Plugin URI: https://github.com/RadGH/RS-Account-Pages
 
 define( 'RSAD_PATH', __DIR__ );
 define( 'RSAD_URL', plugin_dir_url(__FILE__) );
-define( 'RSAD_VERSION', '1.0.2' );
+define( 'RSAD_VERSION', '1.0.3' );
 
 class RS_Account_Pages {
 	
