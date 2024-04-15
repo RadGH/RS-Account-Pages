@@ -25,6 +25,9 @@ This plugin adds the Account Pages post type. You can also create menus in the s
 
 ## Changelog
 
+### 1.0.4
+* Fixed Git Updater by adding the branch name `main` to the plugin header
+
 ### 1.0.3
 * Added vertical layout to account menu block
 * Changed ACF fields to load on acf/init
@@ -34,7 +37,7 @@ This plugin adds the Account Pages post type. You can also create menus in the s
 * Automatically flush rewrite rules after activation
 
 ### 1.0.1
-* Added GitHub Updater support
+* Added Git Updater support
 
 ### 1.0.0
 * Initial release
