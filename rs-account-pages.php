@@ -10,7 +10,7 @@ Primary Branch: main
 */
 
 define( 'RSAD_PATH', __DIR__ );
-define( 'RSAD_URL', plugin_dir_url(__FILE__) );
+define( 'RSAD_URL', untrailingslashit(plugin_dir_url(__FILE__)) );
 define( 'RSAD_VERSION', '1.0.4' );
 
 class RS_Account_Pages {

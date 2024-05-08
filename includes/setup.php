@@ -76,7 +76,7 @@ class RS_Account_Pages_Setup {
 		// Block editor JS (admin-only)
 		// - compiled using "npm run build", see readme.md for details.
 		// $asset = require( RSAD_PATH . '/assets/scripts/dist/zingmap-dashboard-block-editor.asset.php' );
-		// wp_register_script( 'zingmap-dashboard-blocks-block-editor', RSAD_URL . 'assets/scripts/dist/zingmap-dashboard-block-editor.js', $asset['dependencies'], $asset['version'] );
+		// wp_register_script( 'zingmap-dashboard-blocks-block-editor', RSAD_URL . '/assets/scripts/dist/zingmap-dashboard-block-editor.js', $asset['dependencies'], $asset['version'] );
 		
 	}
 	
