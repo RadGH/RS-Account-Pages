@@ -30,9 +30,6 @@ class RS_Account_Pages_Setup {
 		// Register custom block types
 		add_action( 'init', array( __CLASS__, 'register_blocks' ) );
 		
-		// Load ACF fields
-		add_action( 'acf/init', array( __CLASS__, 'load_acf_fields' ) );
-		
 	}
 	
 	/**
@@ -135,13 +132,6 @@ class RS_Account_Pages_Setup {
 		
 		register_block_type( RSAD_PATH . '/blocks/account-menu/block.json');
 		
-	}
-	
-	/**
-	 * Load ACF fields
-	 */
-	public static function load_acf_fields() {
-		require_once( RSAD_PATH . '/acf-fields/fields.php' );
 	}
 	
 }
