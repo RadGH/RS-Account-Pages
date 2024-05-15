@@ -31,6 +31,9 @@ This plugin adds the Account Pages post type. You can also create menus in the s
 
 ## Changelog
 
+### 1.0.6
+* Fixed acf fields not being included on settings page
+
 ### 1.0.5
 * Updated readme with new screenshot of the account page template
 
