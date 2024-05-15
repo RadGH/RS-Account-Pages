@@ -34,6 +34,9 @@ class RS_Account_Pages {
 			return;
 		}
 		
+		// load acf fields
+		require_once( RSAD_PATH . '/acf-fields/fields.php' );
+		
 		// Load plugin files
 		require_once( RSAD_PATH . '/includes/advanced/post-type-instance.php' );
 		require_once( RSAD_PATH . '/includes/advanced/menu-instance.php' );
