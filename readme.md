@@ -2,6 +2,8 @@
 
 _Adds an Account Pages post type with custom menus that have conditional logic based on the current user._
 
+- [View this plugin on Zingmap.com](https://zingmap.com/plugin/rs-account-pages/)
+
 ```
 Contributors: radgh
 Requires at least: 6.0
